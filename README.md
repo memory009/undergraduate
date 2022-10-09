@@ -1,4 +1,13 @@
 # undergraduate截止至 2022.10.8  
+# undergraduate
+本文档主要用于本科阶段的项目记录以及未来项目的规划
+
+## 致谢
+
+ - [Hanwei Zhang](https://github.com/hanwei0912)
+ - [Qidong Huang](https://github.com/shikiw)
+
+
 ## 目前已完成工作：
 ### Carla
 * Carla-0.9.10.1预编译版本搭建（ubuntu20.04）
@@ -22,3 +31,15 @@
 #### Geometry-Aware Generation ofAdversarial PointClouds(未完成复现)
 * [code](https://github.com/Daniel-Liu-c0deb0t/Adversarial-point-perturbations-on-3D-objects)
 ![figure2](https://github.com/memory009/undergraduate/blob/main/figure/Geometry-Aware%20Generation%20ofAdversarial%20PointClouds.png)
+
+
+## 作者
+
+- [Qisong He](https://github.com/memory009)
+
+
+## 经验和教育
+
+你在建设这个项目时学到了什么？你遇到了什么挑战，你是如何克服的？
+
+
