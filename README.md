@@ -27,7 +27,7 @@
 ![figure3](https://github.com/memory009/undergraduate/blob/main/figure/Geometry-Aware%20Generation%20ofAdversarial%20PointClouds.png)
 
 ## 经验
-* Shape-invariant 3D Adversarial Point Clouds
+* Shape-invariant 3D Adversarial Point Clouds  
 配置该论文环境的时候，可能出现```RuntimeError: CUDA error: no kernel image is available for execution on the device```的问题，出现该问题的原因是pytorch版本与rtx3060不兼容。
 ```
 #使用以下方法卸载原有pytorch，更换为适配的版本
