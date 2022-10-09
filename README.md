@@ -20,7 +20,7 @@
 * [code- https://github.com/shikiw/SI-Adv]( https://github.com/shikiw/SI-Adv)  
 ![figure1](https://github.com/memory009/undergraduate/blob/main/figure/Shape-invariant%203D%20Adversarial%20Point%20Clouds.png)
 * modelnet40的点云可视化结果
-！[figure2](https://github.com/memory009/undergraduate/blob/main/figure/modelnet40%20airplane%E5%8F%AF%E8%A7%86%E5%8C%96.png)
+![figure2](https://github.com/memory009/undergraduate/blob/main/figure/modelnet40%20airplane%E5%8F%AF%E8%A7%86%E5%8C%96.png)
 
 #### Geometry-Aware Generation ofAdversarial PointClouds(未完成代码复现)
 * [code-https://github.com/Daniel-Liu-c0deb0t/Adversarial-point-perturbations-on-3D-objects ](https://github.com/Daniel-Liu-c0deb0t/Adversarial-point-perturbations-on-3D-objects)
