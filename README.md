@@ -43,9 +43,6 @@ pip3 install -e ~/carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64
 ```
 [windows下配置carla点击这里](https://github.com/memory009/CARLA-installation-windows-#readme)
 
-## 作者
-
-- [Qisong He](https://github.com/memory009)
 
 
 
