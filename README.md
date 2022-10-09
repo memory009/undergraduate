@@ -1,4 +1,3 @@
-# undergraduate截止至 2022.10.8  
 # undergraduate
 本文档主要用于本科阶段的项目记录以及未来项目的规划
 
@@ -20,26 +19,33 @@
 #### Shape-invariant 3D Adversarial Point Clouds(Black-box query-based attack由于显存不够未完成复现，White-box attack,Black-box transfer-based attack完成)
 * [code]( https://github.com/shikiw/SI-Adv)  
 ![figure1](https://github.com/memory009/undergraduate/blob/main/figure/Shape-invariant%203D%20Adversarial%20Point%20Clouds.png)
-```
-@inproceedings{huang2022siadv,
-  title={Shape-invariant 3D Adversarial Point Clouds},
-  author={Qidong Huang and Xiaoyi Dong and Dongdong Chen and Weiming Zhang and Nenghai Yu},
-  journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-  year={2022}
-}
-```
+
 #### Geometry-Aware Generation ofAdversarial PointClouds(未完成复现)
 * [code](https://github.com/Daniel-Liu-c0deb0t/Adversarial-point-perturbations-on-3D-objects)
 ![figure2](https://github.com/memory009/undergraduate/blob/main/figure/Geometry-Aware%20Generation%20ofAdversarial%20PointClouds.png)
 
+## 经验
+* Shape-invariant 3D Adversarial Point Clouds
+配置该论文环境的时候，可能出现```RuntimeError: CUDA error: no kernel image is available for execution on the device```的问题，出现该问题的原因是pytorch版本与rtx3060不兼容。
+```
+#使用以下方法卸载原有pytorch，更换为适配的版本
+conda uninstall *torch* cudatoolkit
+pip3 install torch==1.10.2+cu113 torchvision==0.11.3+cu113 torchaudio==0.10.2+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
+```
+
+* carla环境配置的时候可能会因为python版本不兼容或环境问题报错，若报错为```no moudle name carla```，则是因为carla没有安装到python的库里面，此时需要安装carla/PythonAPI/carla/dist中的```carla-0.9.10-py3.7-linux-x86_64.egg```,为减少安装时候造成的一系列错误，强烈建议使用conda新建虚拟环境进行安装
+```
+conda create -n carla python=3.7
+conda activate carla 
+pip3 install -e ~/carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64
+```
+[windows下配置carla详见](https://github.com/memory009/CARLA-installation-windows-#readme)
 
 ## 作者
 
 - [Qisong He](https://github.com/memory009)
 
 
-## 经验和教育
 
-你在建设这个项目时学到了什么？你遇到了什么挑战，你是如何克服的？
 
 
