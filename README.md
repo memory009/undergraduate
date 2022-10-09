@@ -10,4 +10,4 @@
 ### 论文研读
 #### Shape-invariant 3D Adversarial Point Clouds
 * [code]( https://github.com/shikiw/SI-Adv)  
-！[image](https://github.com/memory009/undergraduate/blob/main/figure/Shape-invariant%203D%20Adversarial%20Point%20Clouds.png)
+![image](https://github.com/memory009/undergraduate/blob/main/figure/Shape-invariant%203D%20Adversarial%20Point%20Clouds.png)
