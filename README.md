@@ -11,13 +11,14 @@
 #### Shape-invariant 3D Adversarial Point Clouds(Black-box query-based attack由于显存不够未完成复现，White-box attack,Black-box transfer-based attack完成)
 * [code]( https://github.com/shikiw/SI-Adv)  
 ![figure1](https://github.com/memory009/undergraduate/blob/main/figure/Shape-invariant%203D%20Adversarial%20Point%20Clouds.png)
-```@inproceedings{huang2022siadv,
+```
+@inproceedings{huang2022siadv,
   title={Shape-invariant 3D Adversarial Point Clouds},
   author={Qidong Huang and Xiaoyi Dong and Dongdong Chen and Weiming Zhang and Nenghai Yu},
   journal={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
   year={2022}
-}```
-
+}
+```
 #### Geometry-Aware Generation ofAdversarial PointClouds(未完成复现)
 * [code](https://github.com/Daniel-Liu-c0deb0t/Adversarial-point-perturbations-on-3D-objects)
 ![figure2](https://github.com/memory009/undergraduate/blob/main/figure/Geometry-Aware%20Generation%20ofAdversarial%20PointClouds.png)
