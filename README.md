@@ -16,6 +16,7 @@
 * Carla中对Carla世界的修改，e.g.对天气的修改，车辆的生成（单辆）
 * Carla中获取车辆的位置信息，调用automatic_control，实现车辆（单辆）自动驾驶，并输出其实时点云消息以及2D图像
 <br>
+* Carla学习实时进度[点击这里](https://github.com/memory009/Carla-notebook)
 
 ## 论文研读
 ## Shape-invariant 3D Adversarial Point Clouds(Black-box query-based attack由于显存不够未完成代码复现，White-box attack,Black-box transfer-based attack完成)
@@ -45,7 +46,7 @@ conda create -n carla python=3.7
 conda activate carla 
 pip3 install -e ~/carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64
 ```
-[windows下配置carla点击这里](https://github.com/memory009/CARLA-installation-windows-#readme)
+* [windows下配置carla点击这里](https://github.com/memory009/CARLA-installation-windows-#readme)
 
 ## 未来工作计划
 ### 2022.10.9
