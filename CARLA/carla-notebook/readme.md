@@ -101,7 +101,9 @@ client.apply_batch([carla.command.DestroyActor(x) for x in actor_list])
 
 ## bulid sensor 
 we can put various of sensor in the car,so there are many carla's sensor.  
-you can learn more information about sensor in [here](https://carla.readthedocs.io/en/latest/python_api/)
+you can learn more information about sensor in [here](https://carla.readthedocs.io/en/latest/python_api/)  
+here are some introduce about sensor
+![figure1](https://github.com/memory009/undergraduate/blob/main/figure/sensor.png)
 
 ## cautious
 ```bash
