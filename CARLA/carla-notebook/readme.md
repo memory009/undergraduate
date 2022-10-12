@@ -84,6 +84,7 @@ world.set_weather(weather)
 
 ## Add traffic to the simulation
 ```
+# add 30 cars
 for i in range(30): 
     vehicle_bp = random.choice(bp_lib.filter('vehicle')) 
     npc = world.try_spawn_actor(vehicle_bp, random.choice(spawn_points)) 
@@ -91,6 +92,7 @@ for i in range(30):
 
 ## Set the all vehicles in motion using the Traffic Manager
 ```
+#switch on autopilot
 for v in world.get_actors().filter('*vehicle*'): 
     v.set_autopilot(True) 
 ```
