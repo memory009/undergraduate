@@ -54,29 +54,34 @@ spectator.set_transform(carla.Transform())
 ```
 </s>
 
+## Get the blueprint library and the spawn points for the map（2022.10.11-10.12 under construction）
+* If you want to spawn(生成) Actors ，firstly you must defind its Blueprint
+```
+# load blueprint for all objects
+blueprint_library = world.get_blueprint_library()
+spawn_points = world.get_map().get_spawn_points() 
+```
+
+## Get the blueprint for the vehicle you want(e.g. mercedes-benz)
+```
+vehicle_bp = blueprint_library.find('vehicle.mercedes-benz.coupe')
+# Try spawning the vehicle at a randomly chosen spawn point
+vehicle = world.try_spawn_actor(vehicle_bp, random.choice(spawn_points))
+```
+
+##  Move the spectator behind the vehicle 
+```
+spectator = world.get_spectator() 
+transform = carla.Transform(vehicle.get_transform().transform(carla.Location(x=-4,z=2.5)),vehicle.get_transform().rotation) 
+spectator.set_transform(transform) 
+```
+
 ## Change the weather
 ```bash
 weather = carla.WeatherParameters(cloudiness=10.0,precipitation=10.0,fog_density=10.0)
 world.set_weather(weather)
 ```
 
-## Spawn Actor（2022.10.11  under construction）
-* If you want to spawn(生成) Actors ，firstly you must defind its Blueprint
-```
-# load blueprint for all objects
-blueprint_library = world.get_blueprint_library()
-# find a vehicle's blueprint(e.g. mercedes-benz)
-ego_vehicle_bp = blueprint_library.find('vehicle.mercedes-benz.coupe')
-# choice a colar for the car
-```
-
-* After builing blueprint,we should set a birth point for the car.birth point not only can be set in a particular place,but also can be set in random place.The place we settle these cars must free space,for example we can't put a car on the tree or in the see.
-```
-# Find all the positions that can be used as initial points and choose one at random
-transform = random.choice(world.get_map().get_spawn_points())
-# spawn a car in this position
-ego_vehicle = world.spawn_actor(ego_vehicle_bp, transform)
-```
 ## Operate the car
 we can movie the car through definding its initial position&dynamic function
 ```
@@ -104,6 +109,22 @@ we can put various of sensor in the car,so there are many carla's sensor.
 you can learn more information about sensor in [here](https://carla.readthedocs.io/en/latest/python_api/)  
 here are some introduce about sensor
 ![figure1](https://github.com/memory009/undergraduate/blob/main/figure/sensor.png)
+* Spawn an RGB cammera with an offset from the vehicle center
+```
+camera_bp = bp_lib.find('sensor.camera.rgb') 
+camera_init_trans = carla.Transform(carla.Location(z=2))
+camera = world.spawn_actor(camera_bp, camera_init_trans, attach_to=vehicle)
+```
+
+* Start the camera saving data to disk
+```
+camera.listen(lambda image: image.save_to_disk('out/%06d.png' % image.frame))
+```
+
+* Stop the camera when we've recorded enough data
+```
+camera.stop()
+```
 
 ## cautious
 ```bash
