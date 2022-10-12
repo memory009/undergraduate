@@ -82,24 +82,24 @@ weather = carla.WeatherParameters(cloudiness=10.0,precipitation=10.0,fog_density
 world.set_weather(weather)
 ```
 
-## Operate the car
-we can movie the car through definding its initial position&dynamic function
+## Add traffic to the simulation
 ```
-# move the car
-location = ego_vehicle.get_location()
-location.x += 10.0
-ego_vehicle.set_location(location)
-# set the car into auto pattern
-ego_vehicle.set_autopilot(True)
-#we even can freeze the car throught kill its physics simulation
-# actor.set_simulate_physics(False)
+for i in range(30): 
+    vehicle_bp = random.choice(bp_lib.filter('vehicle')) 
+    npc = world.try_spawn_actor(vehicle_bp, random.choice(spawn_points)) 
+```
+
+## Set the all vehicles in motion using the Traffic Manager
+```
+for v in world.get_actors().filter('*vehicle*'): 
+    v.set_autopilot(True) 
 ```
 
 ## Destroy Actor
 Remember to destroy the car after running the script, otherwise it will always exist in the simulation world, which may affect the operation of other scripts
 ```
 # destory single Actor
-ego_vehicle.destroy()
+vehicle.destroy()
 # if you have many actors,you should put them into a list,and destroy them together
 client.apply_batch([carla.command.DestroyActor(x) for x in actor_list])
 ```
