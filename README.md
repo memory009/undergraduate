@@ -7,7 +7,7 @@
  - [Hanwei Zhang](https://github.com/hanwei0912)
  - [Qidong Huang](https://github.com/shikiw)
  <br>
-,
+
 ## 目前已完成工作：
 ## Carla（2022.10.9）
 * Carla-0.9.10.1预编译版本搭建（ubuntu20.04）监督
