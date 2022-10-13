@@ -7,7 +7,7 @@
  - [Hanwei Zhang](https://github.com/hanwei0912)
  - [Qidong Huang](https://github.com/shikiw)
  <br>
-
+,
 ## 目前已完成工作：
 ## Carla（2022.10.9）
 * Carla-0.9.10.1预编译版本搭建（ubuntu20.04）监督
@@ -18,7 +18,7 @@
 ## Carla（2022.10.13）
 * Carla学习实时进度(https://github.com/memory009/undergraduate/tree/main/CARLA/carla-notebook)
 https://github.com/memory009/undergraduate/blob/main/CARLA/carla-notebook/readme.md
-* 在Carla中生成50个npc，调用camera_sensor,使用opencv进行实时监督
+* 在Carla中生成50个npc，调用camera_sensor，使用opencv进行实时监督
 ## 论文研读
 ## Shape-invariant 3D Adversarial Point Clouds(Black-box query-based attack由于显存不够未完成代码复现，White-box attack,Black-box transfer-based attack完成)
 * [code- https://github.com/shikiw/SI-Adv]( https://github.com/shikiw/SI-Adv)  
@@ -37,7 +37,7 @@ https://github.com/memory009/undergraduate/blob/main/CARLA/carla-notebook/readme
 配置该论文环境的时候，可能出现```RuntimeError: CUDA error: no kernel image is available for execution on the device```的问题，出现该问题的原因是pytorch版本与rtx3060不兼容。
 ```
 #使用以下方法卸载原有pytorch，更换为适配的版本
-conda uninstall *torch* cudatoolkit
+conda uninstall *torch* cudatoolkit,
 pip3 install torch==1.10.2+cu113 torchvision==0.11.3+cu113 torchaudio==0.10.2+cu113 -f https://download.pytorch.org/whl/cu113/torch_stable.html
 ```
 
@@ -51,7 +51,9 @@ pip3 install -e ~/carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64
 
 ## 未来工作计划
 ### 2022.10.9
-* 获取其他状态下Carla输出的点云信息(e.g.加入多车辆以及行人干扰情况下Carla点云输出的获取)
+<s>
+* 获取其他状态下Carla输出的点云信息(e.g.加入多车辆以及行人干扰情况下Carla点云输出的获取)--finished
+</s>
 * 尝试使用Carla复现detection以及classification任务
 * evaluate model的确立(first: model can run; second: model can be evaluated)
 * 
