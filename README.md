@@ -53,7 +53,8 @@ pip3 install -e ~/carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64
 ### 2022.10.9
 <s>
 * 获取其他状态下Carla输出的点云信息(e.g.加入多车辆以及行人干扰情况下Carla点云输出的获取)--finished
-</s>
+</s>  
+
 * 尝试使用Carla复现detection以及classification任务
 * evaluate model的确立(first: model can run; second: model can be evaluated)
 * 
