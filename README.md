@@ -21,10 +21,9 @@ This document is mainly used for project records at the undergraduate level and 
 
 
 # Paper list 
-## [Shape-invariant 3D Adversarial Point Clouds](https://github.com/memory009/undergraduate/blob/main/conferences/cvpr2022%20adversarial.md)
+* [Shape-invariant 3D Adversarial Point Clouds](https://github.com/memory009/undergraduate/blob/main/conferences/cvpr2022%20adversarial.md)
 
-
-## [Geometry-Aware Generation ofAdversarial PointClouds](https://github.com/memory009/undergraduate/blob/main/conferences/usenix%20security2020.md)
+* [Geometry-Aware Generation ofAdversarial PointClouds](https://github.com/memory009/undergraduate/blob/main/conferences/usenix%20security2020.md)
 
  
 ## experience
