@@ -59,6 +59,9 @@ pip3 install -e ~/carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64
 * Run the 3D point clouds data obtained by carla and run an evaluate result on the detection
 * Deploy the attack code to the previous problem
 
-
+<details>
+  <summary>什么是iuap design</summary>
+  iuap design 是用友网络FED团队开发的企业级应用前端集成解决方案。
+</details>
 
 
