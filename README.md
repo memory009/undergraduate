@@ -3,8 +3,8 @@ This document is mainly used for project records at the undergraduate level and 
 <br>
 
 ## Thanks
-
  - [Hanwei Zhang](https://github.com/hanwei0912)
+ - [Sihao Wu](https://github.com/WilliamWu96)
  - [Qidong Huang](https://github.com/shikiw)
  <br>
 
