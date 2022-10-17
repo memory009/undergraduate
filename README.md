@@ -21,7 +21,8 @@ This document is mainly used for project records at the undergraduate level and 
 
 
 # Paper list 
-## Shape-invariant 3D Adversarial Point Clouds
+## [Shape-invariant 3D Adversarial Point Clouds](https://github.com/memory009/undergraduate/blob/main/conferences/cvpr2022%20adversarial.md)
+
 
 ## Geometry-Aware Generation ofAdversarial PointClouds(Unfinished code reproduction)
 * [code-https://github.com/Daniel-Liu-c0deb0t/Adversarial-point-perturbations-on-3D-objects ](https://github.com/Daniel-Liu-c0deb0t/Adversarial-point-perturbations-on-3D-objects)
@@ -55,10 +56,5 @@ pip3 install -e ~/carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64
 * Solve the problem that the point cloud is too sparse to detect
 * Run the 3D point clouds data obtained by carla and run an evaluate result on the detection
 * Deploy the attack code to the previous problem
-
-<details>
-  <summary>什么是iuap design</summary>
-  iuap design 是用友网络FED团队开发的企业级应用前端集成解决方案。
-</details>
 
 
