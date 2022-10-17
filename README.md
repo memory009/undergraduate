@@ -22,7 +22,8 @@ This document is mainly used for project records at the undergraduate level and 
 
 # Paper list 
 
-## Shape-invariant 3D Adversarial Point Clouds(Uncompleted 'Black-box query-based attack' reproduction due to insufficient video memory;Finsh 'White-box attack','Black-box transfer-based attack')
+## Shape-invariant 3D Adversarial Point Clouds
+(Uncompleted 'Black-box query-based attack' reproduction due to insufficient video memory;Finsh 'White-box attack','Black-box transfer-based attack')
 * [code- https://github.com/shikiw/SI-Adv]( https://github.com/shikiw/SI-Adv)  
 ![figure1](https://github.com/memory009/undergraduate/blob/main/figure/Shape-invariant%203D%20Adversarial%20Point%20Clouds.png)
 * Point cloud visualization results of modelnet40
