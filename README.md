@@ -51,7 +51,7 @@ pip3 install -e ~/carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64
 * Establishment evaluate model(first: model can run; second: model can be evaluated)
 </details>
 
-### 2022.10.17
+2022.10.17
 * Solve the problem that the point cloud is too sparse to detect
 * Run the 3D point clouds data obtained by carla and run an evaluate result on the detection
 * Deploy the attack code to the previous problem
