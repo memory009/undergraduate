@@ -43,7 +43,7 @@ pip3 install -e ~/carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64
 ```
 * [To configure carla under windows click here](https://github.com/memory009/CARLA-installation-windows-#readme)
 
-## Next Move
+## To do list
 ### 2022.10.9
 * Obtain 3D point clouds information output by Carla in other states (e.g. the acquisition of Carla point cloud output in the case of multi-vehicle and pedestrian interference)    --finished
 * Try to use Carla to reproduce other people's detection and classification models
