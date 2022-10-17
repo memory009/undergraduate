@@ -44,10 +44,13 @@ pip3 install -e ~/carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64
 * [To configure carla under windows click here](https://github.com/memory009/CARLA-installation-windows-#readme)
 
 ## To do list
-### 2022.10.9
+<details>
+<summary>### 2022.10.9</summary>
 * Obtain 3D point clouds information output by Carla in other states (e.g. the acquisition of Carla point cloud output in the case of multi-vehicle and pedestrian interference)    --finished
 * Try to use Carla to reproduce other people's detection and classification models
 * Establishment evaluate model(first: model can run; second: model can be evaluated)
+</details>
+
 ### 2022.10.17
 * Solve the problem that the point cloud is too sparse to detect
 * Run the 3D point clouds data obtained by carla and run an evaluate result on the detection
