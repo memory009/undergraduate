@@ -27,8 +27,10 @@ This document is mainly used for project records at the undergraduate level and 
 ![figure1](https://github.com/memory009/undergraduate/blob/main/figure/Shape-invariant%203D%20Adversarial%20Point%20Clouds.png)
 * Point cloud visualization results of modelnet40
 ![figure2](https://github.com/memory009/undergraduate/blob/main/figure/modelnet40%20airplane%E5%8F%AF%E8%A7%86%E5%8C%96.png)
+</details>
 <br>
 
+<details>
 <summary>Geometry-Aware Generation ofAdversarial PointClouds(Unfinished code reproduction)</summary>
 * [code-https://github.com/Daniel-Liu-c0deb0t/Adversarial-point-perturbations-on-3D-objects ](https://github.com/Daniel-Liu-c0deb0t/Adversarial-point-perturbations-on-3D-objects)
 ![figure3](https://github.com/memory009/undergraduate/blob/main/figure/Geometry-Aware%20Generation%20ofAdversarial%20PointClouds.png)
