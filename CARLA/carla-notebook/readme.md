@@ -126,10 +126,51 @@ camera.listen(lambda image: image.save_to_disk('out/%06d.png' % image.frame))
 * Stop the camera when we've recorded enough data
 ```
 camera.stop()
+
+## set synchronous_mode
+If you want to get a completed output, i hightly recommend you to try synchronous_mode.Because default_mode will run the code as fast as computer can. In many time,although client didn't get lidar_data from map,car moving by itself.Maybe,serve had run 3 times,but client just had run 1 time,this is why the photos stored by our cameras drop frames.
+```
+def sensor_callback(sensor_data, sensor_queue, sensor_name):
+    if 'lidar' in sensor_name:
+        sensor_data.save_to_disk(os.path.join('../outputs/output_synchronized', '%06d.ply' % sensor_data.frame))
+    if 'camera' in sensor_name:
+        sensor_data.save_to_disk(os.path.join('../outputs/output_synchronized', '%06d.png' % sensor_data.frame))
+    sensor_queue.put((sensor_data.frame, sensor_name))
+
+settings = world.get_settings()
+settings.synchronous_mode = True
+world.apply_settings(settings)
+
+camera = world.spawn_actor(blueprint, transform)
+sensor_queue = queue.Queue()
+camera.listen(lambda image: sensor_callback(image, sensor_queue, "camera"))
+
+while True:
+    world.tick()
+    data = sensor_queue.get(block=True)
+```
+
+If you want to autopilot you car in synchronous_mode,you must rely on "traffic manager" which swich on synchronous_mode
+```
+traffic_manager = client.get_trafficmanager(8000)
+traffic_manager.set_synchronous_mode(True)
+
+ego_vehicle = world.spawn_actor(ego_vehicle_bp, transform)
+ego_vehicle.set_autopilot(True, 8000)
 ```
 
 ## cautious
-```bash
+* 以下假设 CARLA 在默认异步模式下运行。如果您使用了同步模式，以下部分中的某些代码可能无法按预期工作。  
 The following presumes that CARLA is running in the default asynchronous mode. If you have engaged synchronous mode, some of the code in the following sections might not work as expected.
-# 以下假设 CARLA 在默认异步模式下运行。如果您使用了同步模式，以下部分中的某些代码可能无法按预期工作。
+* If you already set synchronous_mode,don't forget adjust world to asynchronous_mode,or servee will error until end because it can't find client
 ```
+try:
+  .......
+finally:
+  settings = world.get_settings()
+  settings.synchronous_mode = False
+  settings.fixed_delta_seconds = None
+  world.apply_settings(settings)
+```
+You can get synchronous_mode code in [here](https://github.com/memory009/undergraduate/blob/main/CARLA/Python%20API/examples/synchronize.py)
+
