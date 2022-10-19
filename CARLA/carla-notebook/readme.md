@@ -126,7 +126,7 @@ camera.listen(lambda image: image.save_to_disk('out/%06d.png' % image.frame))
 * Stop the camera when we've recorded enough data
 ```
 camera.stop()
-
+```
 ## set synchronous_mode
 If you want to get a completed output, i hightly recommend you to try synchronous_mode.Because default_mode will run the code as fast as computer can. In many time,although client didn't get lidar_data from map,car moving by itself.Maybe,serve had run 3 times,but client just had run 1 time,this is why the photos stored by our cameras drop frames.
 ```
