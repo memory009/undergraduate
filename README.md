@@ -66,4 +66,8 @@ pip3 install -e ~/carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64
 * [(a)_code](https://github.com/shikiw/SI-Adv)
 * [(b)Exploring the Devil in Graph Spectral Domain for 3D Point Cloud Attacks 2022 ECCV](https://arxiv.org/abs/2202.07261)
 * [(b)_code](https://github.com/WoodwindHu/GSD)
+* [(c)Geometry-Aware Generation of Adversarial Point Clouds 2020 IEEE TPARI](https://arxiv.org/abs/1912.11171)
+* [(c)_code](https://github.com/Gorilla-Lab-SCUT/GeoA3)
+* [(d)Generating 3d adversarial point clouds 2019 CVPR](https://arxiv.org/abs/1809.07016)
+* [(d)_code](https://github.com/xiangchong1/3d-adv-pc)
 
