@@ -63,4 +63,7 @@ pip3 install -e ~/carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64
 * Reproduce the demo of the paper
 * read conference papers  
 * [(a)Shape-invariant 3D Adversarial Point Clouds 2022 CVPR](https://arxiv.org/abs/2203.04041)
+* [(a)_code](https://github.com/shikiw/SI-Adv)
+* [(b)Exploring the Devil in Graph Spectral Domain for 3D Point Cloud Attacks 2022 ECCV](https://arxiv.org/abs/2202.07261)
+* [(b)_code](https://github.com/WoodwindHu/GSD)
 
