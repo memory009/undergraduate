@@ -43,6 +43,15 @@ pip3 install -e ~/carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64
 ```
 * [To configure carla under windows click here](https://github.com/memory009/CARLA-installation-windows-#readme)
 
+## Paper reproduction record
+|   Attack   | PointNet |      |      |      |   | PointNet++ |      |      |      |   | dsgnn |     |      |      |
+|:----------:|:--------:|------|------|------|---|:----------:|------|------|------|---|:-----:|-----|------|------|
+|            | ASR      | MSE  | CD   | HD   |   | ASR        | MSE  | CD   | HD   |   | ASR   | MSE | CD   | HD   |
+|            | (%)      |      |      |      |   | (%)        |      |      |      |   | (%)   |     |      |      |
+| PointNet   |          |      |      |      |   |            |      |      |      |   |       |     |      |      |
+| PointNet++ |    12.6  | 0.58 | 2.15 | 2.04 |   |    13.7    | 0.58 | 2.15 | 2.04 |   |       |     |      |      |
+| dsgnn      |          |      |      |      |   |            |      |      |      |   |       |     |      |      |
+
 ## To do list
 <details>
 <summary>2022.10.9</summary>  
