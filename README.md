@@ -44,7 +44,7 @@ pip3 install -e ~/carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64
 * [To configure carla under windows click here](https://github.com/memory009/CARLA-installation-windows-#readme)
 
 ## Paper reproduction record
-[SI-adv](https://www.overleaf.com/project/635cb02b6bea8f04370eafae)
+[data_record](https://www.overleaf.com/project/635cb02b6bea8f04370eafae)
 
 ## To do list
 <details>
