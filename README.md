@@ -62,11 +62,13 @@ pip3 install -e ~/carla/PythonAPI/carla/dist/carla-0.9.10-py3.7-linux-x86_64
 * Deploy the attack code to the previous problem
 </details>
 
-2020.10.24
+2022.10.24
 * Reproduce the demo of the paper
 * read conference papers  
+* Finished on 2022.10.31
 * [(a)Shape-invariant 3D Adversarial Point Clouds 2022 CVPR](https://arxiv.org/abs/2203.04041)
 * [(a)_code](https://github.com/shikiw/SI-Adv)
+* Reproducing
 * [(b)Exploring the Devil in Graph Spectral Domain for 3D Point Cloud Attacks 2022 ECCV](https://arxiv.org/abs/2202.07261)
 * [(b)_code](https://github.com/WoodwindHu/GSDA)
 * [(c)Geometry-Aware Generation of Adversarial Point Clouds 2020 IEEE TPARI](https://arxiv.org/abs/1912.11171)
