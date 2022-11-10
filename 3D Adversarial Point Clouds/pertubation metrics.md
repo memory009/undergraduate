@@ -8,7 +8,7 @@ The principle of recording disturbance indicators
 
 ## Hausdoff distance
 
-<div align=right><img src="https://github.com/memory009/undergraduate/blob/main/figure/Hausdorff%20Distance.jpg" width="50%" height="50%">
+<div align=center><img src="https://github.com/memory009/undergraduate/blob/main/figure/Hausdorff%20Distance.jpg" width="50%" height="50%">
 
 ![Hausdoff distance](https://github.com/memory009/undergraduate/blob/main/figure/Hausdorff%20Distance.jpg)
 
