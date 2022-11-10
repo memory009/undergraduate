@@ -5,6 +5,10 @@ The principle of recording disturbance indicators
 * Number of Points Added
 
 ## Hausdoff distance
+<div  align="center">    
+<img src="[图片地址](https://github.com/memory009/undergraduate/blob/main/figure/Hausdorff%20Distance.jpg)" width="50%" height="50% />
+</div>
+
 ![Hausdoff distance](https://github.com/memory009/undergraduate/blob/main/figure/Hausdorff%20Distance.jpg)
 
 ## Chamfer Measurement
