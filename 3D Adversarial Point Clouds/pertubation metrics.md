@@ -8,6 +8,8 @@ The principle of recording disturbance indicators
 
 ## Hausdoff distance
 
+img src="https://github.com/memory009/undergraduate/blob/main/figure/Hausdorff%20Distance.jpg" width="50%" height="50%">
+
 ![Hausdoff distance](https://github.com/memory009/undergraduate/blob/main/figure/Hausdorff%20Distance.jpg)
 
 ## Chamfer Measurement
